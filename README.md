@@ -2,6 +2,13 @@
 
 curated list of embedded (probably C) design patterns, recipes and idioms
 
+Each page follows the format from the Gang of Four book, and contains these sections:
+
+* *Intent* - What is the problem this pattern solves?
+* *Motivation* - A longer, motivating example problem and a simple description of the pattern
+* *Applicability* - Situations in which this pattern might be useful
+* *Structure* - Specifically, how does the pattern look or how might you implement it? 
+
 ## Creational Patterns
 
 | Pattern | Description |
