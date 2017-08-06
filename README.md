@@ -1,6 +1,6 @@
-# embedded-patterns
+# Embedded Patterns
 
-curated list of embedded (probably C) design patterns, recipes and idioms
+A curated collection of embedded design patterns, recipes and idioms. Although the examples are primariliy written in C, the concepts behind each pattern should be applicable to other languages, even if the implementation may differ.
 
 Each page follows the format from the Gang of Four book, and contains these sections:
 
