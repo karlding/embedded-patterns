@@ -28,3 +28,8 @@ Each page follows the format from the Gang of Four book, and contains these sect
 |:------- |:-----------|
 | [Lock/Mutex](/synchronization/mutex.md) | Enforces mutual exclusion limit on a resource to gain exclusive access |
 
+## Reliability Patterns
+
+| Pattern | Description |
+|:------- |:-----------|
+| [Cyclic Redundancy Check](/reliability/crc.md) | Checks that the data matches a checksum |
