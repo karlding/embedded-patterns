@@ -38,4 +38,5 @@ Each page follows the format from the Gang of Four book, and contains these sect
 
 | Pattern | Description |
 |:------- |:-----------:|
+| [Adapter](/hardware/adapter.md) | Adapts between two interfaces |
 | [Debouncing](/hardware/debouncing.md) | Reject multiple false input events |
