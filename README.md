@@ -33,3 +33,9 @@ Each page follows the format from the Gang of Four book, and contains these sect
 | Pattern | Description |
 |:------- |:-----------|
 | [Cyclic Redundancy Check](/reliability/crc.md) | Checks that the data matches a checksum |
+
+## Hardware Access Patterns
+
+| Pattern | Description |
+|:------- |:-----------:|
+| [Debouncing](/hardware/debouncing.md) | Reject multiple false input events |
