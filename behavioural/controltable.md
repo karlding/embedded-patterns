@@ -29,13 +29,13 @@ typedef enum {
 
 bool read_register(DeviceRegister reg, uint8_t *data) {
   if (reg == DEVICE_REGISTER_A) {
-    return send(DEVICE_REGISTER_A_COMMAND);
+    return send(DEVICE_REGISTER_A_COMMAND, data);
   }
   if (reg == DEVICE_REGISTER_B) {
-    return send(DEVICE_REGISTER_B_COMMAND);
+    return send(DEVICE_REGISTER_B_COMMAND, data);
   }
   if (reg == DEVICE_REGISTER_C) {
-    return send(DEVICE_REGISTER_C_COMMAND);
+    return send(DEVICE_REGISTER_C_COMMAND, data);
   }
   // error
   return false;
@@ -48,11 +48,11 @@ If you're more ambitious, you might've written this as a ``switch``/``case`` sta
 bool read_register(DeviceRegister *reg, uint8_t *data) {
   switch(reg) {
     case DEVICE_REGISTER_A:
-      return send(DEVICE_REGISTER_A_COMMAND);
+      return send(DEVICE_REGISTER_A_COMMAND, data);
     case DEVICE_REGISTER_B:
-      return send(DEVICE_REGISTER_B_COMMAND);
+      return send(DEVICE_REGISTER_B_COMMAND, data);
     case DEVICE_REGISTER_C:
-      return send(DEVICE_REGISTER_C_COMMAND);
+      return send(DEVICE_REGISTER_C_COMMAND, data);
     default:
       // error
       return false;
@@ -60,7 +60,7 @@ bool read_register(DeviceRegister *reg, uint8_t *data) {
 }
 ```
 
-This can be simplified using a control table.
+However, this can be simplified using a control table. This can simply be an array with ``NUM_DEVICE_REGISTER`` entries, corresponding to each register.
 
 ```c
 static uint16_t s_reg_cmd[NUM_DEVICE_REGISTER] = { 
@@ -70,11 +70,12 @@ static uint16_t s_reg_cmd[NUM_DEVICE_REGISTER] = {
 }
 
 bool read_register(DeviceRegister *reg, uint8_t *data) {
+  // prevent reading out of array memory bounds
   if (reg > NUM_DEVICE_REGISTER) {
     // error
     return false;
   }
 
-  return send(s_reg_cmd[reg]);
+  return send(s_reg_cmd[reg], data);
 }
 ```
