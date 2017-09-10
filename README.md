@@ -12,31 +12,32 @@ Each page follows the format from the Gang of Four book, and contains these sect
 ## Creational Patterns
 
 | Pattern | Description |
-|:------- |:-----------|
+|:------- |:------------|
 | [Object Pool](/creational/object-pool.md) | Instantiates and maintains a group of objects instances of the same type |
 
 ## Behavioural Patterns
 
 | Pattern | Description |
-|:------- |:-----------|
+|:------- |:------------|
 | [Control Table](/behavioural/controltable.md) | Direct program control flow in some way through "execution" by a processor or interpreter |
 | [State Machine](/behavioural/statemachine.md) | Encapsulates varying behavior for the same object based on its internal state |
 
 ## Synchronization Patterns
 
 | Pattern | Description |
-|:------- |:-----------|
+|:------- |:------------|
 | [Lock/Mutex](/synchronization/mutex.md) | Enforces mutual exclusion limit on a resource to gain exclusive access |
+| [Semaphore](/synchronization/semaphore.md) | Impose access limits on a limited number of resources |
 
 ## Reliability Patterns
 
 | Pattern | Description |
-|:------- |:-----------|
+|:------- |:------------|
 | [Cyclic Redundancy Check](/reliability/crc.md) | Checks that the data matches a checksum |
 
 ## Hardware Access Patterns
 
 | Pattern | Description |
-|:------- |:-----------:|
+|:------- |:------------|
 | [Adapter](/hardware/adapter.md) | Adapts between two interfaces |
 | [Debouncing](/hardware/debouncing.md) | Reject multiple false input events |
