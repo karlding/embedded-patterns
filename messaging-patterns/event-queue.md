@@ -1,5 +1,9 @@
 # Event Queue Pattern
 
+Event Queues are also known as **Mailboxes**, especially when different events
+have separate queues (this can also be implemented using a message queue with 
+**Topics**&mdash;with a topic for each `Mailbox`).
+
 ## Intent
 
 Decouple a message or event from where it is sent away from when it is processed.

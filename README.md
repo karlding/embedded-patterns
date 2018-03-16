@@ -20,7 +20,6 @@ Each page follows the format from the Gang of Four book, and contains these sect
 | Pattern | Description |
 |:------- |:------------|
 | [Control Table](/behavioural/controltable.md) | Direct program control flow in some way through "execution" by a processor or interpreter |
-| [Event Queue](/behavioural/event-queue.md) | Decouple a message or event from where it is sent away from when it is processed |
 | [State Machine](/behavioural/statemachine.md) | Encapsulates varying behavior for the same object based on its internal state |
 
 ## Synchronization Patterns
@@ -42,3 +41,10 @@ Each page follows the format from the Gang of Four book, and contains these sect
 |:------- |:------------|
 | [Adapter](/hardware/adapter.md) | Adapts between two interfaces |
 | [Debouncing](/hardware/debouncing.md) | Reject multiple false input events |
+
+
+## Messaging Patterns
+
+| Pattern | Description |
+|:------- |:------------|
+| [Event Queue](/messaging-patterns/event-queue.md) | Decouple a message or event from where it is sent away from when it is processed |
